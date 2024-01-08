@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    line-height: 1;
+    font-size: 32px;
+    font-weight: 400
+}
+
+/*----------------------------------------------------------*/
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------------------------------------------------------*/
+
+._container {
+    max-width: 1160px;
+    padding: 0 15px;
+    margin: 0px auto;
+    box-sizing: content-box;
+}
+
+.img {
+    box-sizing: content-box;
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+/*button {
+    display: block;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}*/
+
+/*------------------ШАПКА----------------------------------------*/
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 20px;
+    z-index: 50;
+}
+
+.header__container {
+    display: flex;
+    min-height: 120px;
+    align-items: center;
+}
+
+@media(max-width:479px) {
+    .header__container {
+        min-height: 70px;
+    }
+}
+
+.header__logo {
+    font-size: 48px;
+    font-weight: 400;
+    color: inherit;
+}
+
+.header__menu {
+    margin: 0px 0px 0px 84px;
+}
+
+@media(max-width:767px) {
+    .header__menu {
+        margin: 0px 0px 0px 40px;
+    }
+}
+
+@media(max-width:479px) {
+    .header__menu {
+        margin: 0px 0px 0px 20px;
+    }
+}
+
+.menu {
+    padding: 5px 0;
+}
+
+.menu__list {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.menu__item {
+
+}
+
+.menu__item:not(:last-child) {
+    margin: 0 66px 0 0;
+}
+
+.menu__link {
+    color: rgb(68, 93, 139);
+    line-height: normal
+}
+
+@media(max-width:479px) {
+    .menu__link {
+        font-size: 60px;
+    }
+}
+
+/*-----------------PAGE-----------------------------------------*/
+
+
+.page {
+    margin: 300px 0px 0px 0px;
+    /*border: 1px solid #000;*/
+}
+
+@media(max-width:479px) {
+    .page {
+        font-size: 60px;
+    }
+}
+
+/*----------------Продукция------------------------------------------*/
+
+.main-block__title {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    border: 1px solid #000;
+}
+
+.main-block__body {
+    display: flex;
+    box-sizing: content-box;
+    text-align: center;
+    /*border: 1px solid #000;*/
+}
+
+.product_item {
+    margin: 20px 20px 20px 20px;
+    position: relative;
+}
+
+.product_item_img img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.product_title {
+    margin: 20px 0px 0px 0px;
+}
+
+/*----------------Контакты------------------------------------------*/
+
+.conact-block__title {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    border: 1px solid #000;
+}
+
+.conact-block__body {
+    /*border: 1px solid #000;*/
+}
+
+.conact-block__body-info {
+    margin: 30px;
+    /*border: 1px solid #000;*/
+}
+
+/*----------------О-нас------------------------------------------*/
+
+.about-us-block__title {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    border: 1px solid #000;
+}
+
+.about-us-block__body-info {
+    margin: 30px;
+}
+
+/*----------------ПОДВАЛ------------------------------------------*/
+.footer {
+    
+}
+
+/*----------------MAIN-BLOCK------------------------------------------*/
